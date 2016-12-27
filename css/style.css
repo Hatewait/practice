@@ -1,0 +1,169 @@
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.main-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 130px;
+    background-color: crimson;
+    margin-bottom: 30px;
+}
+
+.goods {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.goods__item {
+    width: 100%;
+    min-height: 70px;
+    margin-bottom: 20px;
+    background-color: darkgray;
+}
+
+.goods__item:nth-child(3) {
+    display: none;
+}
+
+.features {
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 30px;
+    background-color: darkgray;
+}
+
+.content {
+    display: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .main-header {
+        min-height: 150px;
+    }
+    .container {
+        box-sizing: border-box;
+        width: 768px;
+        padding: 0 20px;
+    }
+
+    .goods {
+        margin-bottom: 30px;
+    }
+
+    .goods__item:nth-child(3) {
+        display: none;
+    }
+
+    .goods__item {
+        float: left;
+        width: 353px;
+        margin-right: 20px;
+    }
+
+    .goods__item:nth-child(n+2) {
+        margin-right: 0;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .content__img {
+        float: right;
+        width: 210px;
+        margin-right: 0;
+        min-height: 300px;
+        background-color: darkgray;
+    }
+
+    .content__descr {
+        float: left;
+        width: 500px;
+        min-height: 300px;
+        background-color: darkgray;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 960px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .clearfix::after {
+        content:'';
+        display:table;
+        clear:both;
+    }
+
+    .main-header {
+        width: 100%;
+        min-height: 200px;
+        background-color: crimson;
+        margin-bottom: 30px;
+    }
+
+    .goods {
+        margin-bottom: 30px;
+    }
+
+    .goods__item {
+        float: left;
+        width: 306px;
+        min-height: 100px;
+        margin-right: 20px;
+        background-color: darkgray;
+    }
+
+    .goods__item:nth-child(3) {
+        display: block;
+    }
+
+    .goods__item:nth-child(n+3) {
+        margin-right: 0;
+    }
+
+    .features {
+        width: 100%;
+        min-height: 150px;
+        margin-bottom: 30px;
+        background-color: darkgray;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .content__img {
+        float: left;
+        width: 280px;
+        min-height: 300px;
+        margin-right: 20px;
+        background-color: darkgray;
+    }
+
+    .content__descr {
+        float: right;
+        width: 660px;
+        min-height: 300px;
+        background-color: darkgray;
+    }
+}
